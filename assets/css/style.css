@@ -961,29 +961,31 @@ section li {
 
 @media (max-width: 991px) {
 
-  .nav-link::before {
-    display: none;
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
   }
 
-  /* COLLAPSE CARD */
+  .navbar .container {
+    position: relative; 
+  }
+
   .navbar-collapse {
     position: absolute;
-    top: 100%;             
+    top: 100%;
     left: 0;
     right: 0;
 
     background: #ffffff;
-    margin-top: 0;
-    border-radius: 0 0 16px 16px;
     padding: 16px;
-
+    border-radius: 0 0 16px 16px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.15);
   }
 
-  /* RESET NAV */
   .navbar-nav {
+    padding: 0;
     margin: 0;
-    padding: 0;     
     width: 100%;
   }
 
@@ -991,30 +993,13 @@ section li {
     padding: 12px 14px;
     margin: 8px 0;
     border-radius: 10px;
-    font-weight: 500;
-  }
-
-  .navbar-nav .nav-link:hover {
-    background: rgba(13,110,253,0.08);
   }
 
   .navbar-nav .btn {
     width: 100%;
-    margin-top: 10px;
-  }
-
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-  }
-
-  .navbar {
-    padding: 10px 0;
-     position: fixed;
-    width: 100%;
-    z-index: 9999;
   }
 }
+
 
 
 
