@@ -364,7 +364,7 @@
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
 
         <div class="blog-mag">
-          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" loading="lazy">
           <div class="blog-content">
             <span>Route Guide</span>
             <h6>Best Time to Travel Chennai → Bangalore</h6>
@@ -375,7 +375,7 @@
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
 
         <div class="blog-mag">
-            <img src="https://images.unsplash.com/photo-1494515843206-f3117d3f51b7">
+            <img src="https://images.unsplash.com/photo-1494515843206-f3117d3f51b7" loading="lazy">
           <div class="blog-content">
             <span>Taxi Tips</span>
             <h6>One-Way Taxi vs Round Trip – Cost Comparison</h6>
@@ -387,7 +387,7 @@
       <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
 
         <div class="blog-mag">
-  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" loading="lazy">
   <div class="blog-content">
     <span>Travel</span>
     <h6>Top Weekend Trips from Coimbatore by Car</h6>
@@ -406,11 +406,11 @@
     <div class="row g-4 align-items-stretch">
 
       <!-- LEFT: MAP -->
-      <div class="col-lg-6" data-aos="fade-right">
+      <div class="col-lg-6">
         <div class="contact-map">
           <iframe
             src="https://www.google.com/maps?q=Chennai,Tamil%20Nadu&output=embed"
-            loading="lazy"
+            loading="eager"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
@@ -857,7 +857,10 @@ counters.forEach(counter => observer.observe(counter));
     duration: 900,
     easing: 'ease-out-cubic',
     once: true,
-    offset: 120
+    offset: 120,
+    disable: function () { // Disable on mobile
+      return window.innerWidth < 768;
+    }
   });
 </script>
 
