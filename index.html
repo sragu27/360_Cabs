@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Oneway Drop Taxi</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/aos/css/aos.css">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm " data-aos="fade-down">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="#home"><img src="assets/images/logo.png" alt="OneWayTaxi Logo" class="navbar-logo"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link btn btn-primary text-white px-3 ms-lg-3" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Home section -->
+
+<section id="home" class="hero-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6 hero-content"data-aos="fade-right">
+        <span class="badge hero-badge mb-3">🚖 One Way Outstation Cabs</span>
+        <h1>
+          Reliable <span>One-Way Taxi</span><br>
+          Across Tamil Nadu
+        </h1>
+        <p>
+          Pay only one-side fare. No return charges.
+          Clean cars • Verified drivers • 24/7 support
+        </p>
+
+        <div class="hero-points">
+          <div>✔ No hidden charges</div>
+          <div>✔ Instant confirmation</div>
+          <div>✔ Best price guaranteed</div>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="col-lg-6">
+        <div class="booking-card" data-aos="zoom-in">
+          <h5 class="mb-4">Book Your Ride</h5>
+
+          <!-- FROM -->
+          <div class="mb-3 position-relative">
+            <label class="form-label">From</label>
+            <input type="text" id="fromLocation" class="form-control" placeholder="Pickup city">
+            <ul class="list-group position-absolute w-100 d-none" id="fromList"></ul>
+          </div>
+
+          <!-- TO -->
+          <div class="mb-3 position-relative">
+            <label class="form-label">To</label>
+            <input type="text" id="toLocation" class="form-control" placeholder="Drop city">
+            <ul class="list-group position-absolute w-100 d-none" id="toList"></ul>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Date</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Time</label>
+              <input type="time" class="form-control">
+            </div>
+          </div>
+
+          <button class="btn btn-primary w-100 mt-2">
+            Check Fare →
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- services -->
+
+<section id="services" class="section-padding services-modern">
+  <div class="container fade-up">
+
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="services-badge">🚖 What We Offer</span>
+      <h2 class="section-title mt-2">Premium Taxi Services</h2>
+      <p class="section-subtitle">
+        Designed for comfort, savings, and stress-free long distance travel
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- ONE WAY -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-box">
+          <div class="service-icon">🚕</div>
+          <h5>One-Way Taxi</h5>
+          <p>
+            Pay only for your onward journey.
+            No return fare. No hidden charges.
+          </p>
+
+          <ul class="service-features">
+            <li>✔ Up to 40% cheaper</li>
+            <li>✔ Chennai → Bangalore</li>
+            <li>✔ Instant confirmation</li>
+          </ul>
+
+          <a href="#home" class="service-link">Book One-Way →</a>
+        </div>
+      </div>
+
+      <!-- OUTSTATION -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="service-box featured">
+          <div class="service-icon">🛣️</div>
+          <h5>Outstation Cabs</h5>
+          <p>
+            Flexible and reliable outstation cab services
+            for family & business travel.
+          </p>
+
+          <ul class="service-features">
+            <li>✔ Multi-day trips</li>
+            <li>✔ Experienced drivers</li>
+            <li>✔ Clean & spacious cars</li>
+          </ul>
+
+          <a href="#home" class="service-link">Check Availability →</a>
+        </div>
+      </div>
+
+      <!-- AIRPORT -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-box">
+          <div class="service-icon">✈️</div>
+          <h5>Airport Transfers</h5>
+          <p>
+            On-time airport pickup & drop
+            with live tracking support.
+          </p>
+
+          <ul class="service-features">
+            <li>✔ Fixed pricing</li>
+            <li>✔ 24/7 service</li>
+            <li>✔ No surge charges</li>
+          </ul>
+             <a
+  href="https://wa.me/919XXXXXXXXX?text=%E2%9C%88%EF%B8%8F%20Airport%20Taxi%20Booking%0APickup%20City:%20%0ADrop%20Airport:%20%0ADate:%20%0ATime:%20%0APassengers:"
+  target="_blank"
+  class="service-link whatsapp-link"
+>
+  Book Airport Taxi →
+</a>
+         
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--POPPULAR route  -->
+
+<section class="section-padding routes-premium">
+  <div class="container">
+
+    <div class="row align-items-center mb-5"  data-aos="fade-up">
+      <div class="col-lg-6">
+        <span class="section-badge">Popular Routes</span>
+        <h2 class="section-title mt-2">
+          Trusted One-Way Routes Across Tamil Nadu
+        </h2>
+        <p class="section-subtitle">
+          Thousands of customers book these routes every month at fixed one-way prices.
+        </p>
+      </div>
+
+      <div class="col-lg-6 text-lg-end">
+        <a href="#home" class="btn btn-primary px-4">
+          Check Your Route →
+        </a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="route-card" data-aos="zoom-in" data-aos-delay="100">
+          <h6>Chennai → Bangalore</h6>
+          <p>350 km • 6 hrs</p>
+          <strong>₹5,499</strong>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="route-card" data-aos="zoom-in" data-aos-delay="100">
+          <h6>Chennai → Coimbatore</h6>
+          <p>500 km • 9 hrs</p>
+          <strong>₹7,499</strong>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="route-card" data-aos="zoom-in" data-aos-delay="100">
+          <h6>Madurai → Chennai</h6>
+          <p>460 km • 8 hrs</p>
+          <strong>₹6,999</strong>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="route-card featured">
+          <h6>Trichy → Bangalore</h6>
+          <p>330 km • 6 hrs</p>
+          <strong>₹4,999</strong>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- why chooses -->
+<section class="why-premium">
+  <div class="container text-center">
+
+    <h2 class="section-title text-white mb-4">
+      Why 10,000+ Travellers Choose Us
+    </h2>
+
+    <div class="row g-4">
+      <div class="col-md-3" data-aos="flip-left" data-aos-delay="0">
+        <div class="why-pill">
+          <div class="why-icon">💰</div>
+          
+          <h6>No Return Fare</h6>
+          <p>Pay only for the distance you travel.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="flip-left" data-aos-delay="100">
+        <div class="why-pill">
+          <div class="why-icon">🛡️</div>
+          <h6>Verified Drivers</h6>
+          <p>Police-verified & trained professionals.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="flip-left" data-aos-delay="200">
+        <div class="why-pill">
+          <div class="why-icon">🚘</div>
+          
+          <h6>Clean Cars</h6>
+          <p>AC, GPS-enabled, sanitized vehicles.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3" data-aos="flip-left" data-aos-delay="300">
+        <div class="why-pill">
+           <div class="why-icon"> 📞</div>
+         
+          <h6>Human Support</h6>
+          <p>24/7 phone & WhatsApp assistance.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- about section start -->
+
+<section id="about" class="section-padding about-modern">
+  <div class="container fade-up">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-badge">About Us</span>
+        <h2 class="section-title mt-2">
+          Travel Smarter with One-Way Taxi
+        </h2>
+
+        <p class="about-text">
+          OneWayTaxi is a trusted intercity cab service built for travelers
+          who want transparent pricing, verified drivers, and stress-free journeys.
+        </p>
+
+        <p class="about-text">
+          Unlike traditional round-trip taxis, we focus on **one-way travel** —
+          so you pay only for the distance you ride. No return fare. No surprises.
+        </p>
+
+        <p class="about-highlight">
+        Trusted by families, business travelers, and daily commuters across Tamil Nadu.
+        </p>
+
+        <div class="about-stats" data-aos="fade-up" data-aos-delay="200">
+        <div>
+          <h4 class="counter" data-target="10000">0</h4>
+          <span>Trips Completed</span>
+        </div>
+        <div>
+          <h4 class="counter" data-target="100">0</h4>
+          <span>Cities Covered</span>
+        </div>
+        <div>
+          <h4 class="counter" data-target="4.8">0</h4>
+          <span>Customer Rating</span>
+        </div>
+        </div>
+
+
+        <a href="#home" class="btn btn-outline-primary mt-4">
+          Book Your One-Way Ride →
+      </a>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1549924231-f129b911e442"
+               class="img-fluid" alt="Taxi Service">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- blog -->
+
+<section id="blog" class="section-padding blog-modern">
+  <div class="container fade-up">
+
+    <div class="text-center mb-5">
+      <span class="section-badge">Travel Guides</span>
+      <h2 class="section-title mt-2">
+        Tips, Routes & Taxi Guides
+      </h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
+
+        <div class="blog-mag">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+          <div class="blog-content">
+            <span>Route Guide</span>
+            <h6>Best Time to Travel Chennai → Bangalore</h6>
+          </div>
+      </div>
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+
+        <div class="blog-mag">
+            <img src="https://images.unsplash.com/photo-1494515843206-f3117d3f51b7">
+          <div class="blog-content">
+            <span>Taxi Tips</span>
+            <h6>One-Way Taxi vs Round Trip – Cost Comparison</h6>
+          </div>
+        </div>
+       
+      </div>
+
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+
+        <div class="blog-mag">
+  <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+  <div class="blog-content">
+    <span>Travel</span>
+    <h6>Top Weekend Trips from Coimbatore by Car</h6>
+  </div>
+</div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- CONTACT -->
+
+<section id="contact" class="contact-premium">
+  <div class="container fade-up">
+    <div class="row g-4 align-items-stretch">
+
+      <!-- LEFT: MAP -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps?q=Chennai,Tamil%20Nadu&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- RIGHT: CONTACT INFO -->
+      <div class="col-lg-6" >
+        <div class="contact-info-card" data-aos="fade-left">
+
+          <span class="contact-badge">24/7 Booking Support</span>
+
+          <h3 class="mt-3">
+            Talk to a Real Human
+          </h3>
+
+          <p class="contact-desc">
+            Get instant fare details, route confirmation,
+            and driver assignment for one-way & outstation trips.
+          </p>
+
+          <div class="contact-list">
+
+            <div class="contact-item">
+              📍
+              <div>
+                <strong>Office Address</strong>
+                <p>Chennai, Tamil Nadu, India</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              📞
+              <div>
+                <strong>Call Us</strong>
+                <p>
+                  <a href="tel:+919XXXXXXXXX">+91 9XXXXXXXXX</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              ✉️
+              <div>
+                <strong>Email</strong>
+                <p>
+                  <a href="mailto:support@onewaytaxi.com">
+                    support@onewaytaxi.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="contact-actions mt-4 d-flex flex-wrap gap-3">
+            <a href="tel:+919XXXXXXXXX" class="btn btn-primary px-4">
+              📞 Call Now
+            </a>
+
+            <a
+              href="https://wa.me/919XXXXXXXXX"
+              target="_blank"
+              class="btn btn-success px-4"
+            >
+              💬 WhatsApp
+            </a>
+          </div>
+
+          <div class="contact-trust d-flex flex-wrap gap-3">
+            <span>✔ No Return Fare</span>
+            <span>✔ Verified Drivers</span>
+            <span>✔ Fixed Pricing</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-premium">
+  <div class="container">
+
+    <div class="row gy-4">
+      
+      <!-- Brand -->
+      <div class="col-lg-4">
+        <h5 class="footer-logo">OneWayTaxi</h5>
+        <p class="footer-text">
+          Trusted one-way cab service across Tamil Nadu.
+          Pay only for what you travel — no return fare.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="footer-title">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Popular Routes -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="footer-title">Popular Routes</h6>
+        <ul class="footer-links">
+          <li>Chennai → Bangalore</li>
+          <li>Chennai → Coimbatore</li>
+          <li>Madurai → Chennai</li>
+          <li>Trichy → Bangalore</li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-lg-3">
+        <h6 class="footer-title">Contact</h6>
+        <p class="footer-text mb-1">📞 +91 9XXXXXXXXX</p>
+        <p class="footer-text mb-1">✉ support@onewaytaxi.com</p>
+        <p class="footer-text">📍 Tamil Nadu, India</p>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      © <span id="year"></span> OneWayTaxi. All Rights Reserved.
+    </div>
+
+  </div>
+</footer>
+
+<!-- whatsapp float button -->
+<a
+  href="https://wa.me/919XXXXXXXXX?text=🚖%20One-Way%20Taxi%20Booking%0AFrom:%20%0ATo:%20%0ADate:%20%0ATime:"
+  class="whatsapp-float"
+  target="_blank"
+  aria-label="Chat on WhatsApp"
+>
+  <img
+    src="assets/images/WhatsApp.svg"
+    alt="WhatsApp"
+  />
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer end -->
+
+<script src="assets/js/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+ <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="assets/aos/js/aos.js"></script>
+
+
+
+    <script>
+      window.addEventListener("scroll", () => {
+      const nav = document.querySelector(".navbar");
+      if (window.scrollY > 10) {
+          nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+       
+  </script>
+
+
+<script>
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  function setActiveLink() {
+    let scrollPos = window.scrollY + 120;
+
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute("id");
+
+      if (scrollPos >= top && scrollPos < top + height) {
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + id) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  }
+
+  window.addEventListener("scroll", setActiveLink);
+  window.addEventListener("load", setActiveLink);
+</script>
+
+
+
+
+
+  <!-- from and to location search -->
+
+  <script>
+const ALLOWED_STATES = [
+  "Tamil Nadu",
+  "Kerala",
+  "Andhra Pradesh",
+  "Karnataka",
+  "Puducherry"
+];
+
+const placeCache = {};
+let activeController = null;
+
+function placeSuggest(inputId, listId) {
+  const input = document.getElementById(inputId);
+  const list = document.getElementById(listId);
+  let debounceTimer;
+
+  input.addEventListener("input", () => {
+    clearTimeout(debounceTimer);
+
+    debounceTimer = setTimeout(async () => {
+      const rawQuery = input.value.trim();
+      const query = rawQuery.toLowerCase();
+      list.innerHTML = "";
+
+      if (query.length < 2) {
+        list.classList.add("d-none");
+        return;
+      }
+
+      // ⚡ prefix cache (instant)
+      for (const key in placeCache) {
+        if (query.startsWith(key)) {
+          renderList(
+            placeCache[key].filter(p =>
+              (p.display_name || "").toLowerCase().includes(query)
+            ),
+            input,
+            list
+          );
+          return;
+        }
+      }
+
+      // ⚡ exact cache
+      if (placeCache[query]) {
+        renderList(placeCache[query], input, list);
+        return;
+      }
+
+      // ❌ cancel previous request
+      if (activeController) activeController.abort();
+      activeController = new AbortController();
+
+      list.innerHTML = `<li class="list-group-item text-muted">Searching…</li>`;
+      list.classList.remove("d-none");
+
+      try {
+        const url =
+          `https://nominatim.openstreetmap.org/search?` +
+          `format=json&q=${encodeURIComponent(rawQuery + ", India")}` +
+          `&countrycodes=in&limit=12&addressdetails=1` +
+          // 🗺️ South India bounding box
+          `&viewbox=72.5,19.5,80.5,8.0&bounded=1`;
+
+        const res = await fetch(url, {
+          signal: activeController.signal,
+          headers: {
+            "Accept": "application/json",
+            "User-Agent": "OneWayTaxiApp/1.0"
+          }
+        });
+
+        const data = await res.json();
+
+        const filtered = data
+          .filter(p => {
+            const a = p.address || {};
+            return (
+              ALLOWED_STATES.includes(a.state) &&
+              (a.suburb || a.neighbourhood || a.locality ||
+               a.city || a.town || a.district)
+            );
+          })
+          .sort((a, b) => rank(a) - rank(b));
+
+        placeCache[query] = filtered;
+        renderList(filtered, input, list);
+
+      } catch (e) {
+        if (e.name !== "AbortError") {
+          list.innerHTML =
+            `<li class="list-group-item text-danger">Try again</li>`;
+        }
+      }
+
+    }, 140); // ⚡ ultra-responsive
+  });
+
+  document.addEventListener("click", e => {
+    if (!input.contains(e.target) && !list.contains(e.target)) {
+      list.classList.add("d-none");
+    }
+  });
+}
+
+function rank(place) {
+  const a = place.address || {};
+  if (a.suburb || a.neighbourhood) return 1;
+  if (a.locality) return 2;
+  if (a.city || a.town) return 3;
+  return 4;
+}
+
+function renderList(data, input, list) {
+  list.innerHTML = "";
+  if (!data.length) {
+    list.classList.add("d-none");
+    return;
+  }
+
+  data.forEach(place => {
+    const a = place.address || {};
+    const area =
+      a.suburb || a.neighbourhood || a.locality ||
+      a.city || a.town || a.district;
+
+    const city = a.city || a.town || "Chennai";
+
+    const li = document.createElement("li");
+    li.className = "list-group-item list-group-item-action";
+    li.textContent = `${area}, ${city}, ${a.state}`;
+
+    li.onclick = () => {
+      input.value = `${area}, ${city}`;
+      list.classList.add("d-none");
+    };
+
+    list.appendChild(li);
+  });
+
+  list.classList.remove("d-none");
+}
+
+placeSuggest("fromLocation", "fromList");
+placeSuggest("toLocation", "toList");
+</script>
+
+
+
+<!-- FOOTER -->
+ <script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+
+<!-- aboutus counter anim -->
+
+<script>
+const counters = document.querySelectorAll('.counter');
+
+const runCounter = (counter) => {
+  const target = +counter.dataset.target;
+  const isDecimal = target % 1 !== 0;
+  let count = 0;
+  const speed = 200;
+
+  const update = () => {
+    count += target / speed;
+    if (count < target) {
+      counter.innerText = isDecimal
+        ? count.toFixed(1)
+        : Math.ceil(count);
+      requestAnimationFrame(update);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  update();
+};
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      runCounter(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => observer.observe(counter));
+</script>
+
+<!-- navbar once clcked means close -->
+
+<script>
+  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const navCollapse = document.querySelector('.navbar-collapse');
+      const bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
+      bsCollapse.hide();
+    });
+  });
+</script>
+
+
+
+
+<!-- AOS ANIM -->
+
+<script>
+  AOS.init({
+    duration: 900,
+    easing: 'ease-out-cubic',
+    once: true,
+    offset: 120
+  });
+</script>
+
+
+
+
+
+    
+</body>
+</html>
