@@ -998,6 +998,18 @@ section li {
   .navbar-nav .btn {
     width: 100%;
   }
+  .nav-link::before {
+    display: none !important;
+  }
+
+   .nav-link.active {
+    background: linear-gradient(
+      135deg,
+      rgba(13,110,253,0.12),
+      rgba(13,110,253,0.04)
+    );
+    border-radius: 12px;
+  }
 }
 
 
